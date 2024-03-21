@@ -44,7 +44,7 @@ const app = http
       res.end();
     }
     if (q === '/students') {
-      res.write('This is the list of our students');
+      res.write('This is the list of our students\n');
       countStudents(process.argv[2], res)
         .then((data) => {
           res.write(data);
