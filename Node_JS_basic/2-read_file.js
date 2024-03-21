@@ -7,8 +7,8 @@ function countStudents(path) {
 
     const counters = {};
 
-    for (let index = 1; index < lines.length; index += 1) {
-      const line = lines[index];
+    for (let i = 1; i < lines.length; i += 1) {
+      const line = lines[i];
       const [firstName, , , field] = line.split(',');
 
       if (field) {
